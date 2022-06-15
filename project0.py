@@ -3,7 +3,7 @@
 #Possible code Login to access to-do and budget.
 #Possible use code: Budget app
 #import math
-#add dictionary,add test, logging module, budget log
+#add dictionary,add test, logging module, budget log kk
 
 import csv #implements classes to read and write data from csv format.
 #csv.reader iterates over lines in a given csvfile.
