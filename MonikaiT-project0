@@ -6,7 +6,7 @@
 #import math
 #add dictionary,add test, logging module, budget log kk
 
-#import csv #implements classes to read and write data from csv format.
+import csv #implements classes to read and write data from csv format.
 #csv.reader iterates over lines in a given csvfile.
 #csv.writer converts user data into delimited strings on the given file-like object.
 #with open("'to--do.csv', 'w', newline = ''") as csvfile:
@@ -15,12 +15,12 @@
 #import unittest
 #import subprocess
 #import math
-#import pdb
+import pdb
 #import turtle
-#import logging
+import logging
 #import pickle
-#logging.basicConfig(filename='todo.log', level = logging.DEBUG)
-#logging.basicConfig(filename='budget.log', level = logging.INFO)
+logging.basicConfig(filename='todo.log', level = logging.DEBUG)
+logging.basicConfig(filename='budget.log', level = logging.INFO)
 print("Welcome!")
 
 budget = {"monthly": "The next 4 weeks", "Yearly" : "The next 365 days ",}
