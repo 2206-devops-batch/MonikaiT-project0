@@ -4,7 +4,7 @@
 #Possible use code: Budget app
 #added ubuntu  & ansible, next steps are writing to csv files  and automating retrieval
 import math
-#add dictionary,add test, logging module, budget log
+#add dictionary,add test, logging module, budget log, fix commits
 
 import csv #implements classes to read and write data from csv format.
 #csv.reader iterates over lines in a given csvfile.
