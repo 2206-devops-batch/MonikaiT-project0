@@ -2,6 +2,7 @@
 #Budget app for expenses. To later be connected to the To-do list.
 #Possible code Login to access to-do and budget.
 #Possible use code: Budget app
+#added ubuntu  & ansible, next steps are writing to csv files  and automating retrieval
 import math
 #add dictionary,add test, logging module, budget log
 
