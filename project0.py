@@ -1,11 +1,9 @@
-#!/usr/bin/env bash
 #Budget app for expenses. To later be connected to the To-do list.
 #Possible code Login to access to-do and budget.
 #Possible use code: Budget app
-#added ubuntu  & ansible, next steps are writing to csv files  and automating retrieval
-import math
-#add dictionary,add test, logging module, budget log, fix commits
-
+#import math
+#add dictionary,add test, logging module, budget log
+import argparse
 import csv #implements classes to read and write data from csv format.
 #csv.reader iterates over lines in a given csvfile.
 #csv.writer converts user data into delimited strings on the given file-like object.
@@ -19,6 +17,7 @@ import pdb
 import turtle
 import logging
 import pickle
+import datetime
 logging.basicConfig(filename='todo.log', level = logging.DEBUG)
 logging.basicConfig(filename='budget.log', level = logging.INFO)
 print("Welcome!")
@@ -46,35 +45,42 @@ while True:
             print("Let's get budgeting!")
             checking = (int(input("Checking amount: ")))#int allows for the input interger to be printed
             housing = (int(input("Housing: ")))
-            saving = (int(input("Saving: ")))
+            savings = (int(input("Savings: ")))
             bills = (int(input("Bills: ")))
             transportation = (int(input("Transportation: ")))
             food = (int(input("Food: ")))
             misc = (int(input("Misc: ")))
-            total_expenses = (housing + saving + bills + transportation + food + misc)
+            total_expenses = (housing + savings + bills + transportation + food + misc)
             logging.info(str(total_expenses) + " is your total expense for this month")
             print(str(total_expenses) + " is your total expense for this month") #str turns the interger into a string.
             months_leftover = (int(checking - total_expenses))
             logging.info(str(months_leftover) + " is your remainder this month.")
             print(str(months_leftover) + " is your remainder this month.")
+            with open('budget.csv', 'w', newline='') as k:
+                budgetwrite = csv.writer(k)
+                dm = datetime.date.today()
+                budgetwrite.writerow(('Date', 'Expense for this month', 'remainder for this month',))
+                budgetwrite.writerow((dm, total_expenses, months_leftover))
             continue #continues the loop at the start.
             # I want to print results to a file here
 
 
         elif todo_budget.upper() == "Y":  # I want to import a csv file here
-            df = open('todo.csv', 'rt')
+            df = open('todo.csv', 'r')
             rows = csv.reader(df)
-            for row in rows:
-                print(row)
-                logging.debug(row)
+            with open('todo.csv', 'r') as csvfile:
+                for row in rows:
+                    print(row[1:4])
+                    logging.debug(row)
             break
 
 print("Exit Interview")
 exitinterview = input("Ready to go? 'Y' or 'N':  ")
         # elif exitinterview.upper() == "N":
         # enterexit = input("Answer with Y or N: ")
-while exitinterview.upper() != "Y":
+while exitinterview.upper() == "Y":
     print("goodbye!")
     exit()
     if exitinterview.upper() == "N":
-        continue
+        print("")
+
