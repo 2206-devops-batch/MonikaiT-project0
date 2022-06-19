@@ -154,3 +154,5 @@ DEBUG:root:['FALSE', '', '']
 DEBUG:root:['FALSE', '', '']
 DEBUG:root:['FALSE', '', '']
 DEBUG:root:['FALSE', '', '']
+INFO:root:2470 is your total expense for this month
+INFO:root:530 is your remainder this month.

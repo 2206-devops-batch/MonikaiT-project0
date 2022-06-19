@@ -1,0 +1,12 @@
+python -m unittest test_project0.py
+used to run the test page.The -m tells python to run the unit test module
+as a script.
+you can also use python -m uint test (python will then search for test 
+and run them.
+import unittest
+class Testtotal_expenses(unittest.TestCase):
+    def test_upper(self):
+        self.assertEqual('y'.upper(), 'Y')
+        self.assertEqual('n'.upper(), 'N')
+
+

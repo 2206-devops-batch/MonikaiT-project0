@@ -59,8 +59,8 @@ while True:
             with open('budget.csv', 'w', newline='') as k:
                 budgetwrite = csv.writer(k)
                 dm = datetime.date.today()
-                budgetwrite.writerow(('Date', 'Expense for this month', 'remainder for this month',))
-                budgetwrite.writerow((dm, total_expenses, months_leftover))
+                budgetwrite.writerow(('Date', 'Expense for this month', 'Remainder for this month', 'Checking', 'Housing', 'Saving', 'Bills', 'Transportation', 'Food', 'Misc'))
+                budgetwrite.writerow((dm, total_expenses, months_leftover, checking, housing , savings, bills, transportation, food, misc))
             continue #continues the loop at the start.
             # I want to print results to a file here
 
@@ -83,4 +83,24 @@ while exitinterview.upper() == "Y":
     exit()
     if exitinterview.upper() == "N":
         print("")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
