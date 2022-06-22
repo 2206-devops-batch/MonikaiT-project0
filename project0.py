@@ -41,6 +41,7 @@ while True:
 
         if todo_budget.upper() == "N":  # This is chunky, I'd like to make it less chunky.
             print("Let's get budgeting!")
+            print("Enter a numerical amount for each monthly budget category.")
             while True:
                 try:
                     checking = (int(input("Checking amount: ")))#int allows for the input interger to be printed
