@@ -166,3 +166,33 @@ DEBUG:root:['FALSE', '6/15', 'create CSV doc']
 DEBUG:root:['FALSE', '9/17', 'Figure out pickle formatting']
 DEBUG:root:['FALSE', '9/18', 'Download ansible']
 DEBUG:root:['FALSE', '9/19', '']
+INFO:root:1800 is your total expense for this month
+INFO:root:1200 is your remainder this month.
+DEBUG:root:['\n To Do', '', '1/4 completed  ']
+DEBUG:root:['', '', '']
+DEBUG:root:['✓', 'Date', 'Task']
+DEBUG:root:['TRUE', '6/12', 'create budget portion']
+DEBUG:root:['FALSE', '6/15', 'create CSV doc']
+DEBUG:root:['FALSE', '9/17', 'Figure out pickle formatting']
+DEBUG:root:['FALSE', '9/18', 'Download ansible']
+DEBUG:root:['FALSE', '9/19', '']
+INFO:root:6 is your total expense for this month
+INFO:root:2994 is your remainder this month.
+DEBUG:root:['\n To Do', '', '1/4 completed  ']
+DEBUG:root:['', '', '']
+DEBUG:root:['✓', 'Date', 'Task']
+DEBUG:root:['TRUE', '6/12', 'create budget portion']
+DEBUG:root:['FALSE', '6/15', 'create CSV doc']
+DEBUG:root:['FALSE', '9/17', 'Figure out pickle formatting']
+DEBUG:root:['FALSE', '9/18', 'Download ansible']
+DEBUG:root:['FALSE', '9/19', '']
+INFO:root:6 is your total expense for this month
+INFO:root:2994 is your remainder this month.
+DEBUG:root:['\n To Do', '', '1/4 completed  ']
+DEBUG:root:['', '', '']
+DEBUG:root:['✓', 'Date', 'Task']
+DEBUG:root:['TRUE', '6/12', 'create budget portion']
+DEBUG:root:['FALSE', '6/15', 'create CSV doc']
+DEBUG:root:['FALSE', '9/17', 'Figure out pickle formatting']
+DEBUG:root:['FALSE', '9/18', 'Download ansible']
+DEBUG:root:['FALSE', '9/19', '']
