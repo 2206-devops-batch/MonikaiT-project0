@@ -1,3 +1,4 @@
+#!/bin/bash python
 #Budget app for expenses. To later be connected to the To-do list.
 #Possible code Login to access to-do and budget.
 #Possible use code: Budget app
