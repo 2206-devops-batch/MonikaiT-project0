@@ -14,7 +14,6 @@ import unittest
 import subprocess
 import math
 import pdb
-import turtle
 import logging
 import pickle
 import datetime
